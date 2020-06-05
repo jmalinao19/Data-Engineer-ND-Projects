@@ -40,7 +40,7 @@ Sample Filepaths:
 2. Wait a few minutes for cluster to spin up then run [`cluster_status.py`](C:\Users\techm\Courses\Data_Engineer_NanoDegree\2-AWS_DataWarehouse\P3_AWSredshift\cluster_status.py) to verify availability
 3. Execute [`create_tables.py`](C:\Users\techm\Courses\Data_Engineer_NanoDegree\2-AWS_DataWarehouse\P3_AWSredshift\create_tables.py) to drop and create staging tables
 4. Execute [`etl.py`](C:\Users\techm\Courses\Data_Engineer_NanoDegree\2-AWS_DataWarehouse\P3_AWSredshift\etl.py) to begin ETL process
-5. Execute [`delete_AWS_cluster.py`] (C:\Users\techm\Courses\Data_Engineer_NanoDegree\2-AWS_DataWarehouse\P3_AWSredshift\delete_cluster.py) to delete redshift cluster 
+5. Execute [`delete_AWS_cluster.py`](C:\Users\techm\Courses\Data_Engineer_NanoDegree\2-AWS_DataWarehouse\P3_AWSredshift\delete_cluster.py) to delete AWS redshift cluster
 
 ## Schema 
 
