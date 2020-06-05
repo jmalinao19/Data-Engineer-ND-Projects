@@ -1,8 +1,5 @@
 import configparser
-import pandas as pd
 import boto3
-import json
-import time
 
 def parse_configFile():
     """
@@ -77,7 +74,8 @@ def get_role(iam, DWH_IAM_ROLE_NAME):
     """
     print('Getting the IAM role Arn\n')
     return iam.get_role(RoleName = DWH_IAM_ROLE_NAME)['Role']['Arn']
-    
+
+   
 
 
 def begin_cluster_build(redshift, roleArn, DWH_CLUSTER_TYPE, DWH_NODE_TYPE, DWH_NUM_NODES, DB_NAME, DWH_CLUSTER_IDENTIFIER, DB_USER, DB_PASSWORD):
