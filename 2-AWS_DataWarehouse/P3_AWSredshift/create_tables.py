@@ -6,11 +6,11 @@ from sql_queries import create_table_queries, drop_table_queries
 def drop_tables(cur, conn):
     """
     Drops all tables
-    @type cur --
-    @param cur --
+    @type cur -- object
+    @param cur -- cursor object
 
-    @type conn --
-    @param conn --
+    @type conn -- object
+    @param conn -- database connection object
     """
     for query in drop_table_queries:
         cur.execute(query)
@@ -20,11 +20,11 @@ def drop_tables(cur, conn):
 def create_tables(cur, conn):
     """
     Creates all tables
-    @type cur --
-    @param cur --
+    @type cur -- object
+    @param cur -- cursor object
 
-    @type conn --
-    @param conn --
+    @type conn -- object
+    @param conn -- database connection object
     """
     for query in create_table_queries:
         cur.execute(query)
@@ -32,6 +32,9 @@ def create_tables(cur, conn):
 
 
 def main():
+    """
+    parses config file, connects to PG database, executes function that drops and creates tables on redshift
+    """
     config = configparser.ConfigParser()
     config.read('dwh.cfg')
 
