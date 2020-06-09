@@ -56,12 +56,12 @@ staging_songs_table_create = ("""
 songplay_table_create = ("""
     CREATE TABLE IF NOT EXISTS songplays(
         songplay_id INTEGER IDENTITY(0,1) PRIMARY KEY,
-        start_time TIMESTAMP DISTKEY SORTKEY, 
-        user_id INTEGER,
+        start_time TIMESTAMP NOT NULL DISTKEY SORTKEY, 
+        user_id INTEGER NOT NULL,
         level VARCHAR(10),
         song_id VARCHAR(50),
         artist_id VARCHAR(50),
-        session_id INTEGER,
+        session_id INTEGER NOT NULL,
         location VARCHAR(500),
         user_agent VARCHAR(500)
     )
@@ -71,10 +71,10 @@ songplay_table_create = ("""
 user_table_create = ("""
     CREATE TABLE IF NOT EXISTS users(
         user_id INTEGER PRIMARY KEY SORTKEY,
-        first_name VARCHAR(250),
-        last_name VARCHAR(250),
+        first_name VARCHAR(250) NOT NULL,
+        last_name VARCHAR(250) NOT NULL,
         gender CHAR(1),
-        level VARCHAR(10)
+        level VARCHAR(10) NOT NULL
     )
 """)
 
@@ -91,7 +91,7 @@ song_table_create = ("""
 artist_table_create = ("""
     CREATE TABLE IF NOT EXISTS artists(
         artist_id VARCHAR(50) PRIMARY KEY SORTKEY,
-        name VARCHAR(500),
+        name VARCHAR(500) NOT NULL,
         location VARCHAR(500),
         latitude FLOAT,
         longitude FLOAT
@@ -146,13 +146,13 @@ songplay_table_insert = ("""
         staging_events_table e 
     INNER JOIN 
         staging_songs_table s 
-    ON (e.song = s.title AND e.artist = s.artist_name )
+    ON (e.song = s.title AND e.artist = s.artist_name AND e.length = s.duration)
     AND e.page = 'NextSong';
 """)
 
 user_table_insert = ("""
     INSERT INTO users (user_id, first_name, last_name, gender, level)
-    SELECT
+    SELECT DISTINCT
         userId,
         firstName,
         lastName,
@@ -160,12 +160,13 @@ user_table_insert = ("""
         level
     FROM
          staging_events_table
-    WHERE page= 'NextSong' AND userid NOT IN (Select DISTINCT user_id FROM users);
+    WHERE 
+        page= 'NextSong' AND userid IS NOT NULL;
 """)
 
 song_table_insert = ("""
     INSERT INTO songs (song_id, title, artist_id, year, duration)
-    SELECT 
+    SELECT DISTINCT
         song_id,
         title,
         artist_id,
@@ -174,7 +175,7 @@ song_table_insert = ("""
     FROM
         staging_songs_table s
     WHERE
-        song_id NOT IN (SELECT DISTINCT song_id FROM songs);   
+        song_id IS NOT NULL;   
 """)
 
 artist_table_insert = ("""
@@ -191,7 +192,7 @@ artist_table_insert = ("""
 
 time_table_insert = ("""
     INSERT INTO time (start_time, hour, day, week, month, year, weekday)
-    SELECT  
+    SELECT DISTINCT
         start_time, 
         extract(hour from start_time),
         extract(day from start_time),
@@ -202,7 +203,7 @@ time_table_insert = ("""
     FROM
         songplays
     WHERE 
-        start_time NOT IN (SELECT DISTINCT start_time from time);
+        start_time IS NOT NULL;
 """)
 
 analytical_queries = [
