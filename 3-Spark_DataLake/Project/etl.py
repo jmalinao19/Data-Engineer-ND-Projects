@@ -100,28 +100,15 @@ def process_log_data(spark, input_data, output_data):
         ).drop_duplicates(['year','month','day','hour']))
 
     # write time table to parquet files partitioned by year and month
-    time_table.write.mode('overwrite').partitionBy('year','month').parquet(output_data + 'time.parquet/')
+    time_table.write.mode('overwrite').partitionBy('year','month').parquet(output_data + 'time_table/')
 
     # read in song data to use for songplays table
-    song_df = spark.read.parquet(output_data + 'songs.parquet')
+    song_df = spark.read.parquet(output_data + 'songs_table/')
 
     # extract columns from joined song and log datasets to create songplays table 
-    df = df.join(song_df(song_df.title == df.song) & (song_df.artist == df.artist))
+    df = df.join(song_df,(song_df.title == df.song) & (song_df.artist == df.artist))
     df = df.withColumn('songplay_id',monotonically_increasing_id())
     songplays_table = df['songplay_id','start_time','userID','level','song_id','artist_id','sessionsId','location','userAgent']
 
     # write songplays table to parquet files partitioned by year and month
-    songplays_table.write.mode('overwrite').parquet(output_data + 'songplays.parquet/')
-
-
-def main():
-    spark = create_spark_session()
-    input_data = "s3a://udacity-dend/"
-    output_data = "s3://udacity-data-engineer19/datalake_project/"
-    
-    process_song_data(spark, input_data, output_data)    
-    process_log_data(spark, input_data, output_data)
-
-
-if __name__ == "__main__":
-    main()
+    songplays_table.write.mode('overwrite').parquet(output_data + 'songplays_table/')
