@@ -1,29 +1,37 @@
-<h1> Data Engineer Nanodegree </h1>
-Course repository of projects from Udacity's Data Engineer Nanodegree. Feel free to check out more about the course and program on <a href="https://www.udacity.com/course/data-engineer-nanodegree--nd027"> Udacity's website </a> or the <a href="C:\Users\techm\Courses\Data_Engineer_NanoDegree\Data+Engineering+Nanodegree+Program+Syllabus.pdf"> course syllabus.</a>
+# Data Engineer Nanodegree
 
+Course repository of projects from Udacity's Data Engineer Nanodegree. Feel free to check out more about the course and program on [Udacity's website](https://www.udacity.com/course/data-engineer-nanodegree--nd027) or check out the [course syllabus](C:\Users\techm\Courses\Data_Engineer_NanoDegree\Data+Engineering+Nanodegree+Program+Syllabus.pdf)
 
-<h2> Concepts Covered:</h2>
-<ul>
-    <li> Course 1: Data Modeling</li>
-    <ul>
-        <li> Relational Data Modeling</li>
-        <li> Unstructured (NoSQL) Data Modeling</li>
-        <li> OLAP and OLTP </li>
-        <li> Normalization and Denormalization</li>
-        <li> STAR and Snowflake Schemas</li>
-        <li><strong> Technologies Utilized:</strong></li>
-            <ul>
-                <li> Python, PostGreSQL, Apache Cassandra</li> 
-            </ul>
-    </ul><br>
-    <li> Course 2: Cloud Data Warehouses</li>
-    <ul>
-        <li> Data Warehouse Archiecture </li>
-        <li> </li>
-        <li> </li>
-        <li> </li>
-        <li> </li>
-    </ul>
+## Concepts Covered 
+* **Course 1: Data Modeling**
+    * Relational Data Modeling
+    * Unstructured (NoSQL) Data Modeling
+    * OLAP and OLTP
+    * Normalization and Denormalization
+    * STAR and Snowflake Schemas
+    * **Technologies Utilized:**
+        * _Python, PostGreSQL, Apache Cassandra_
+    * **Project 1:** [Data Modeling with Postgres: ETL Process] (insert link)
+    * **Project 2:** [Data Modeling with Apache Cassanrda: ETL Process] (insert link) 
 
+* **Course2: Cloud Data Warehouses** 
+    * Data Warehouse Archiecture 
+    * Dimensional Modeling
+    * Denormalizing 3NF database to Star Schema with ETL process
+    * OLAP Cube and its Operations: Roll-up, drill-down, Slice & Dice, Pivot 
+    * Cloud Computing with Amazon Web Services (AWS)
+    * AWS Redshift Archictecture 
+    * Set up AWS infrastucture as code (IaC)
+    * Optimized table design with distribution style and sorting key
+    * **Technologies Utilized:**
+        * _Python, AWS (EC2, S3, IAM, VPC, RDS PostgreSQL, Redshift)_
+    * **Project 3:** [Data Warehouse with AWS Redshift] (insert link) 
 
-</ul>
+* **Course 3: Data Lakes with Spark** 
+    * Big Data Ecosystem
+    * Distributed Systems
+    * Data Wrangling with Spark
+    * Data Lakes
+    * **Technologies Utilized:** 
+        *_Python, AWS (EC2, S3, IAM, EMR, Redshift)
+    * **Project 4:** [Data Lakes with AWS EMR and PySpark] (insert link) 
