@@ -12,7 +12,7 @@ Course repository of projects from Udacity's Data Engineer Nanodegree. Feel free
     * **Technologies Utilized:**
         * _Python, PostGreSQL, Apache Cassandra_
     * **Project 1:** [Data Modeling with Postgres: ETL Process](P1_Postgres)
-    * **Project 2:** [Data Modeling with Apache Cassanrda: ETL Process](P2_Cassandra) 
+    * **Project 2:** [Data Modeling with Apache Cassanrda: ETL Process](P2_Cassandra/README.md) 
 
 * **Course2: Cloud Data Warehouses** 
     * Data Warehouse Archiecture 
@@ -25,7 +25,7 @@ Course repository of projects from Udacity's Data Engineer Nanodegree. Feel free
     * Optimized table design with distribution style and sorting key
     * **Technologies Utilized:**
         * _Python, AWS (EC2, S3, IAM, VPC, RDS PostgreSQL, Redshift)_
-    * **Project 3:** [Data Warehouse with AWS Redshift](P3_AWSredshift) 
+    * **Project 3:** [Data Warehouse with AWS Redshift](P3_AWSredshift/README.md) 
 
 * **Course 3: Data Lakes with Spark** 
     * Big Data Ecosystem
