@@ -11,8 +11,8 @@ Course repository of projects from Udacity's Data Engineer Nanodegree. Feel free
     * STAR and Snowflake Schemas
     * **Technologies Utilized:**
         * _Python, PostGreSQL, Apache Cassandra_
-    * **Project 1:** [Data Modeling with Postgres: ETL Process] (C:\Users\techm\Courses\Data_Engineer_NanoDegree\1-DataModeling\P1_Postgres)
-    * **Project 2:** [Data Modeling with Apache Cassanrda: ETL Process] (C:\Users\techm\Courses\Data_Engineer_NanoDegree\1-DataModeling\P2_Cassandra) 
+    * **Project 1:** [Data Modeling with Postgres: ETL Process](C:\Users\techm\Courses\Data_Engineer_NanoDegree\1-DataModeling\P1_Postgres)
+    * **Project 2:** [Data Modeling with Apache Cassanrda: ETL Process](C:\Users\techm\Courses\Data_Engineer_NanoDegree\1-DataModeling\P2_Cassandra) 
 
 * **Course2: Cloud Data Warehouses** 
     * Data Warehouse Archiecture 
@@ -25,7 +25,7 @@ Course repository of projects from Udacity's Data Engineer Nanodegree. Feel free
     * Optimized table design with distribution style and sorting key
     * **Technologies Utilized:**
         * _Python, AWS (EC2, S3, IAM, VPC, RDS PostgreSQL, Redshift)_
-    * **Project 3:** [Data Warehouse with AWS Redshift] (C:\Users\techm\Courses\Data_Engineer_NanoDegree\2-AWS_DataWarehouse\P3_AWSredshift) 
+    * **Project 3:** [Data Warehouse with AWS Redshift](C:\Users\techm\Courses\Data_Engineer_NanoDegree\2-AWS_DataWarehouse\P3_AWSredshift) 
 
 * **Course 3: Data Lakes with Spark** 
     * Big Data Ecosystem
@@ -33,5 +33,5 @@ Course repository of projects from Udacity's Data Engineer Nanodegree. Feel free
     * Data Wrangling with Spark
     * Data Lakes
     * **Technologies Utilized:** 
-        *_Python, AWS (EC2, S3, IAM, EMR, Redshift)
-    * **Project 4:** [Data Lakes with AWS EMR and PySpark] (C:\Users\techm\Courses\Data_Engineer_NanoDegree\3-Spark_DataLake\Project) 
+        *_Python, PySpark, AWS (EC2, S3, IAM, EMR, Redshift)
+    * **Project 4:** [Data Lakes with AWS EMR and PySpark](C:\Users\techm\Courses\Data_Engineer_NanoDegree\3-Spark_DataLake\Project) 
