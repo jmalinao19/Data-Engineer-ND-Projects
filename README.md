@@ -11,7 +11,7 @@ Course repository of projects from Udacity's Data Engineer Nanodegree. Feel free
     * STAR and Snowflake Schemas
     * **Technologies Utilized:**
         * _Python, PostGreSQL, Apache Cassandra_
-    * **Project 1:** [Data Modeling with Postgres: ETL Process](P1_Postgres)
+    * **Project 1:** [Data Modeling with Postgres: ETL Process](https://github.com/jmalinao19/Data-Engineer-NanoDegree/tree/master/1-DataModeling/P1_PostG)
     * **Project 2:** [Data Modeling with Apache Cassanrda: ETL Process](https://github.com/jmalinao19/Data-Engineer-NanoDegree/tree/master/1-DataModeling/P2_Cassandra) 
 
 * **Course2: Cloud Data Warehouses** 
