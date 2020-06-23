@@ -12,7 +12,7 @@ Course repository of projects from Udacity's Data Engineer Nanodegree. Feel free
     * **Technologies Utilized:**
         * _Python, PostGreSQL, Apache Cassandra_
     * **Project 1:** [Data Modeling with Postgres: ETL Process](P1_Postgres)
-    * **Project 2:** [Data Modeling with Apache Cassanrda: ETL Process](P2_Cassandra/README.md) 
+    * **Project 2:** [Data Modeling with Apache Cassanrda: ETL Process](https://github.com/jmalinao19/Data-Engineer-NanoDegree/tree/master/1-DataModeling/P2_Cassandra) 
 
 * **Course2: Cloud Data Warehouses** 
     * Data Warehouse Archiecture 
@@ -25,7 +25,7 @@ Course repository of projects from Udacity's Data Engineer Nanodegree. Feel free
     * Optimized table design with distribution style and sorting key
     * **Technologies Utilized:**
         * _Python, AWS (EC2, S3, IAM, VPC, RDS PostgreSQL, Redshift)_
-    * **Project 3:** [Data Warehouse with AWS Redshift](P3_AWSredshift/README.md) 
+    * **Project 3:** [Data Warehouse with AWS Redshift](https://github.com/jmalinao19/Data-Engineer-NanoDegree/tree/master/2-AWS_DataWarehouse/P3_AWSredshift) 
 
 * **Course 3: Data Lakes with Spark** 
     * Big Data Ecosystem
@@ -34,4 +34,4 @@ Course repository of projects from Udacity's Data Engineer Nanodegree. Feel free
     * Data Lakes
     * **Technologies Utilized:** 
         *_Python, PySpark, AWS (EC2, S3, IAM, EMR, Redshift)
-    * **Project 4:** [Data Lakes with AWS EMR and PySpark](Project) 
+    * **Project 4:** [Data Lakes with AWS EMR and PySpark](https://github.com/jmalinao19/Data-Engineer-NanoDegree/tree/master/3-Spark_DataLake/Project)
